@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import Hours from "./components/Hours"
 import Minutes from "./components/Minutes"
+import Seconds from "./components/Seconds"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <CenterDot />
         <Hours />
         <Minutes />
+        <Seconds />
       </ClockFace>
     </div>
   );
