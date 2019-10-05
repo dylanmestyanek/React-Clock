@@ -13,14 +13,15 @@ const Minutes = () => {
 export default Minutes;
 
 const MinutesHand = styled.div`
-    background: #000;
-    height: 10%;
-    left: 49.65%;
+    background: red;
+    z-index: 2;
+    height: 18%;
+    left: 49.75%;
     position: absolute;
-    top: 38%;
+    top: 30.25%;
     transform-origin: 50% 100%;
-    width: 10px;
-    // animation: rotate 4s;
+    width: 8px;
+    animation: rotate 4s;
 
     @keyframes rotate {
         100% {

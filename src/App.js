@@ -11,6 +11,7 @@ function App() {
       <ClockFace>
         <CenterDot />
         <Hours />
+        <Minutes />
       </ClockFace>
     </div>
   );
