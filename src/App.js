@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import styled from "styled-components"
 
@@ -7,6 +7,18 @@ import Minutes from "./components/Minutes"
 import Seconds from "./components/Seconds"
 
 function App() {
+  const time = new Date();
+  
+  const [seconds, setSeconds] = useState(time.getSeconds())
+
+  useEffect(() => {
+    let date = new Date;
+    const secondInt = setInterval(() => {
+      setSeconds(date.getSeconds())
+      console.log(seconds)
+    }, 1000)
+  }, [seconds])
+
   return (
     <div className="App">
       <ClockFace>
